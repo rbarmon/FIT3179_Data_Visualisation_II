@@ -21,6 +21,8 @@
     "axis": {"tickCount": 10},
     "scale": {"type": "linear", "domain": [15, 30]}
     },
+
+
     "layer": [
     {
     // Layer 1: bubble plot
@@ -34,7 +36,9 @@
       },
       "color": {
         "field": "Region",
-        "type": "nominal"},
+        "type": "nominal"}
+        
+        ,
   
   
     "selection": {
