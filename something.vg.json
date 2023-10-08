@@ -4,7 +4,7 @@
   "width": 500,
   "title": "Prefecturewise Education Overview: University Graduates, Education Spending, Population, and Region",
   "data": {
-    "url": "data/Japan_life_expectancy2.csv"
+    "url": "data/japandata.csv"
   },
   "mark": "circle",
   "encoding": {

@@ -14,7 +14,7 @@
       "lookup": "properties.name",
       "from": {
         "data": {
-          "url": "data/Japan_life_expectancy2.csv"        ,
+          "url": "data/japandata.csv"        ,
           "format": {"type": "csv", "parse": {"Prefecture": "string", "Forest": "number"}}
         },
         "key": "Prefecture",

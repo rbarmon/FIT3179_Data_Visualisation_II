@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": { "text": "Life Expectancy in Japanese Prefectures" },
   "data": {
-      "url": "data/Japan_life_expectancy2.csv"
+      "url": "data/japandata.csv"
   },
   "mark": "bar",
   "encoding": {
