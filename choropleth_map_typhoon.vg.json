@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 450,
-  "title": "Typhoon Hits",
   "width": "container",
 
   "projection": {"type": "mercator"},

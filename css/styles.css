@@ -101,7 +101,7 @@ h1 {
     margin-bottom: 40px;
 }
 
-
+`
 .annotation_font {
     font-size: 20px;
 }
@@ -134,6 +134,8 @@ h1 {
   
   .centered-text {
     text-align: center; /* Center the text horizontally */
+    font-size: 30px;
+
   }
 
   .center_chunk {

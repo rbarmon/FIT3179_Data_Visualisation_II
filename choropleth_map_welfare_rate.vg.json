@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 600,
   "height": 450,
-  "title": "Welfare Rate",
   "projection": {"type": "mercator"},
   "width": "container",
 

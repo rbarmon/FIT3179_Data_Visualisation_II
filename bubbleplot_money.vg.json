@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "height": 500,
   "width": 500,
-  "title": "Money",
   "data": {
     "url": "data/Japan_life_expectancy5.csv"
   },

@@ -2,7 +2,6 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
   "height": 400,
-  "title": "Prefecture Happiness Ranking 1 ~ 47 in 2020",
   "width": "container",
 
   "projection": {"type": "mercator"},
