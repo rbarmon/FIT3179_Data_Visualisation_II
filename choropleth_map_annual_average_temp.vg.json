@@ -4,7 +4,8 @@
   "height": 450,
   "title": "annual_average_temp",
   "projection": {"type": "mercator"},
-  
+  "width": "container",
+
 
 
   "layer": [
@@ -31,7 +32,9 @@
         "color": {
           "field": "annual_average_temp",
           "type": "quantitative",
-          "scale": {"type": "linear", "domain": [8, 24], "range": ["#d9f7c1", "#0c421d"]},
+          "scale": {"type": "linear", "domain": [8, 24], "range": ["#0066ff", "#ffffff", "#ff0000"]},
+          "legend":{"orient": "none", "legendX":10, "legendY":5},
+
           "title": "annual_average_temp"
         },
     
@@ -48,5 +51,6 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ]
+  ],
+  "config": {}
 }

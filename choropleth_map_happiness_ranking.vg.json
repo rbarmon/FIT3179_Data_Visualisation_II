@@ -1,7 +1,7 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "width": 1000,
-  "height": 550,
+  "height": 400,
   "title": "Prefecture Happiness Ranking 1 ~ 47 in 2020",
   "width": "container",
 
@@ -31,6 +31,7 @@
           "field": "happiness_ranking",
           "type": "quantitative",
           "scale": {"type": "linear", "domain": [47, 1], "range": ["#FFEBEE", "#B71C1C"]},
+          "legend":{"orient": "none", "legendX":10, "legendY":5},
 
           "title": "Happiness Ranking"
         },

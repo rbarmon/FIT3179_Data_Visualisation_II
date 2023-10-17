@@ -134,7 +134,7 @@
         "color": {"value": "black"},
         "opacity": {
           "condition": {
-              "test": "datum['Prefecture'] == 'Tokyo' || datum['Prefecture'] == 'Kyoto' || datum['Prefecture'] == 'Osaka' || datum['Prefecture'] == 'Kyoto' || datum['Prefecture'] == 'Aomori' || datum['Prefecture'] == 'Okinawa' || datum['Prefecture'] == 'Gunma'",       
+              "test": "datum['Prefecture'] == 'Tokyo' || datum['Prefecture'] == 'Fukui' || datum['Prefecture'] == 'Toyama' || datum['Prefecture'] == 'Ishikawa' || datum['Prefecture'] == 'Osaka' || datum['Prefecture'] == 'Kochi' || datum['Prefecture'] == 'Aomori' || datum['Prefecture'] == 'Okinawa' || datum['Prefecture'] == 'Nagasaki'",       
               "value": 1
           },
           "value": 0

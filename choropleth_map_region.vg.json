@@ -51,7 +51,8 @@
               "#ff7f00",
               "#cab2d6"
             ]
-          }
+          },
+          "legend":{"orient": "none", "legendX":10, "legendY":5}
         },
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "Prefecture"},

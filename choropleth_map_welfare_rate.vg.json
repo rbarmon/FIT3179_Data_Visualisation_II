@@ -4,7 +4,8 @@
   "height": 450,
   "title": "Welfare Rate",
   "projection": {"type": "mercator"},
-  
+  "width": "container",
+
 
 
   "layer": [
@@ -31,7 +32,9 @@
         "color": {
           "field": "welfare_rate",
           "type": "quantitative",
-          "scale": {"type": "linear", "domain": [0.5, 3.1], "range": ["#d9f7c1", "#0c421d"]},
+          "scale": {"type": "linear", "domain": [0.5, 3.1], "range": ["#FFEDD2", "#FF6F00"]},
+          "legend":{"orient": "none", "legendX":10, "legendY":5},
+
           "title": "welfare_rate %"
         },
     
@@ -48,5 +51,6 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ]
+  ],
+  "config": {}
 }
