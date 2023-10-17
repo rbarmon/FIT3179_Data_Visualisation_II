@@ -82,20 +82,20 @@ h1 {
 .title_container {
     text-align: center;
     margin-bottom: 40px;
-    background-color: #f5f3f3; /* Add a background color */
-    border: 2px solid #000000; /* Add a border with a contrasting color */
-    padding: 10px; /* Add padding to give space around the border */
+    background-color: #f5f3f3; 
+    border: 2px solid #000000; 
+    padding: 10px; 
 }
 .title {
-    font-size: 3.4em; /* Adjust the value to increase the font size */
-    font-weight: bold; /* Make the font bold */
-    font-family: "Arial", sans-serif; /* Choose a font family */
-    margin-bottom: 10px; /* Adjust the margin-bottom to reduce space below the title */
+    font-size: 3.4em; 
+    font-weight: bold; 
+    font-family: "Arial", sans-serif; 
+    margin-bottom: 10px; 
   }
 
  .under_title {
-    margin-top: 10px; /* Adjust the margin-top to reduce space above the content */
-    font-size: 20px; /* Adjust the value to increase the font size */
+    margin-top: 10px;
+    font-size: 20px; 
   } 
 .pure-g {
     margin-bottom: 40px;
@@ -116,14 +116,14 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    max-width: 600px; /* Set a maximum width for the container */
-    margin: 0 auto; /* Center the container horizontally */
+    max-width: 600px; 
+    margin: 0 auto; 
 
    }
   
 .center_vis{
-    max-width: 100%; /* Ensure the image doesn't exceed its container */
-    height: auto; /* Maintain the aspect ratio of the image */
+    max-width: 100%; 
+    height: auto; 
   }
 
   .text_center_container {
@@ -133,13 +133,13 @@ h1 {
   }
   
   .centered-text {
-    text-align: center; /* Center the text horizontally */
+    text-align: center; 
     font-size: 30px;
 
   }
 
   .center_chunk {
-    margin-bottom: 60px; /* Add margin at the bottom of the first container */
+    margin-bottom: 60px;
 
 
   }
