@@ -1,11 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
-  "height": 550,
-  "title": "Prefecture Happiness Ranking 1 ~ 47 in 2020",
-  "width": "container",
-
+  "width": 600,
+  "height": 450,
+  "title": "pop density",
   "projection": {"type": "mercator"},
+  
+
+
   "layer": [
     {
       "data": {
@@ -18,26 +19,25 @@
           "from": {
             "data": {
               "url": "data/Japan_life_expectancy5.csv"        ,
-              "format": {"type": "csv", "parse": {"Prefecture": "string", "happiness_ranking": "number"}}
+              "format": {"type": "csv", "parse": {"Prefecture": "string", "PopDensity": "number"}}
             },
             "key": "Prefecture",
-            "fields": ["happiness_ranking"]
+            "fields": ["PopDensity"]
           } 
         }
       ],
       "mark": {"type": "geoshape", "stroke": "black"},
       "encoding": {
         "color": {
-          "field": "happiness_ranking",
+          "field": "PopDensity",
           "type": "quantitative",
-          "scale": {"type": "linear", "domain": [47, 1], "range": ["#FFEBEE", "#B71C1C"]},
-
-          "title": "Happiness Ranking"
+          "scale": {"type": "linear", "domain": [200, 6500], "range": ["#d9f7c1", "#0c421d"]},
+          "title": "PopDensity"
         },
     
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "Prefecture"},
-          {"field": "happiness_ranking", "type": "quantitative",  "title": "Happiness Ranking"}
+          {"field": "PopDensity", "type": "quantitative",  "title": "PopDensity"}
         ]
       }
     },
@@ -48,6 +48,5 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ],
-  "config": {}
+  ]
 }

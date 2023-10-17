@@ -1,8 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 800,
-  "height": 550,
-  "title": "Japanese Prefecture Region",
+  "width": 600,
+  "height": 450,
+  "width": "container",
   "projection": {"type": "mercator"},
   "layer": [
     {
@@ -66,5 +66,6 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ]
+  ],
+  "config": {}
 }

@@ -19,7 +19,10 @@
 <!-- <div id="choropleth_map"></div> -->
  
 
-<div id="scatterplot"></div>
+<div id="scatterplot1"></div>
+<div id="scatterplot2"></div>
+<div id="scatterplot3"></div>
+<div id="scatterplot4"></div>
 
 <div id="choropleth_map_1"></div>
 <div id="choropleth_map_2"></div>
@@ -37,6 +40,7 @@
 <div id="somevis6"></div>
 <div id="somevis7"></div>
 
+<div id="somevis8"></div>
 
 
 
@@ -45,11 +49,32 @@
 
 
 <script type="text/javascript">
-  var spec4 = "tryagain.vg.json";
-  vegaEmbed('#scatterplot', spec4).then(function(result) {
+  var spec4 = "bubbleplot_education.vg.json";
+  vegaEmbed('#scatterplot1', spec4).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error); 
 </script>
+
+<script type="text/javascript">
+    var spec4 = "bubbleplot_pop_density.vg.json";
+    vegaEmbed('#scatterplot2', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
+<script type="text/javascript">
+    var spec4 = "bubbleplot_money.vg.json";
+    vegaEmbed('#scatterplot3', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
+<script type="text/javascript">
+    var spec4 = "bubbleplot_.vg.json";
+    vegaEmbed('#scatterplot', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
 
 <script type="text/javascript">
   var spec3 = "choropleth_map_forest_percentage.vg.json";
@@ -111,11 +136,43 @@
 
 
 <script type="text/javascript">
+    var spec4 = "choropleth_map_pop_density.vg.json";
+    vegaEmbed('#somevis7', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
+<script type="text/javascript">
+    var spec4 = "choropleth_map_welfare_rate.vg.json";
+    vegaEmbed('#somevis8', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
+
+<script type="text/javascript">
     var spec4 = "choropleth_map_.vg.json";
     vegaEmbed('#somevis', spec4).then(function(result) {
       // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
     }).catch(console.error); 
   </script>
+
+
+<script type="text/javascript">
+    var spec4 = "choropleth_map_.vg.json";
+    vegaEmbed('#somevis', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
+
+<script type="text/javascript">
+    var spec4 = "choropleth_map_.vg.json";
+    vegaEmbed('#somevis', spec4).then(function(result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+    }).catch(console.error); 
+  </script>
+
 
 
 </body>

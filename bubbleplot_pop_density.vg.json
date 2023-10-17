@@ -4,7 +4,7 @@
     "width": 500,
     "title": "Prefecturewise Education Overview: University Graduates, Education Spending, Population, and Region",
     "data": {
-      "url": "data/japandata.csv"
+      "url": "data/Japan_life_expectancy5.csv"
     },
 
     "params": [
@@ -50,18 +50,18 @@
 
     "encoding": {
         "x": {
-        "field": "University",
+        "field": "Population",
         "type": "quantitative",
-        "title": "Percentage of University/College Graduates",
+        "title": "Population",
         "axis": {"tickCount": 10},
-        "scale": {"type": "linear", "domain": [10, 35]}
+        "scale": {"type": "linear", "domain": [500000, 14050000]}
         },
         "y": {
-        "field": "Educ_exp",
+        "field": "LandMass",
         "type": "quantitative",
-        "title": "Percentage of education expenditure",
+        "title": "Land Mass",
         "axis": {"tickCount": 10},
-        "scale": {"type": "linear", "domain": [15, 30]}
+        "scale": {"type": "log", "domain": [2000, 85000]}
         }
     },
     "layer": [
@@ -69,9 +69,9 @@
         "mark": "circle",
         "encoding": {
             "size": {
-            "field": "Population",
+            "field": "PopDensity",
             "type": "quantitative",
-            "scale": {"range": [30, 500]},
+            "scale": {"range": [75, 6450]},
             "legend": {"format": ".1s"}
           },
           "color": {
@@ -115,8 +115,8 @@
             {"field": "Prefecture", "type": "nominal"},
             {"field": "Region", "type": "nominal"},
             {"field": "Population", "type": "quantitative", "format": ","},
-            {"field": "University", "type": "quantitative", "format": ","},
-            {"field": "Educ_exp", "type": "quantitative", "format": ","}
+            {"field": "LandMass", "type": "quantitative", "format": ","},
+            {"field": "PopDensity", "type": "quantitative", "format": ","}
             ]
         }
       },
@@ -143,8 +143,8 @@
             {"field": "Prefecture", "type": "nominal"},
             {"field": "Region", "type": "nominal"},
             {"field": "Population", "type": "quantitative", "format": ","},
-            {"field": "University", "type": "quantitative", "format": ","},
-            {"field": "Educ_exp", "type": "quantitative", "format": ","}
+            {"field": "LandMass", "type": "quantitative", "format": ","},
+            {"field": "PopDensity", "type": "quantitative", "format": ","}
             ]
         }
       }

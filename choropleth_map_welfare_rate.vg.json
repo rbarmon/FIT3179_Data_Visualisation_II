@@ -1,11 +1,12 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 1000,
-  "height": 550,
-  "title": "Prefecture Happiness Ranking 1 ~ 47 in 2020",
-  "width": "container",
-
+  "width": 600,
+  "height": 450,
+  "title": "Welfare Rate",
   "projection": {"type": "mercator"},
+  
+
+
   "layer": [
     {
       "data": {
@@ -18,26 +19,25 @@
           "from": {
             "data": {
               "url": "data/Japan_life_expectancy5.csv"        ,
-              "format": {"type": "csv", "parse": {"Prefecture": "string", "happiness_ranking": "number"}}
+              "format": {"type": "csv", "parse": {"Prefecture": "string", "welfare_rate": "number"}}
             },
             "key": "Prefecture",
-            "fields": ["happiness_ranking"]
+            "fields": ["welfare_rate"]
           } 
         }
       ],
       "mark": {"type": "geoshape", "stroke": "black"},
       "encoding": {
         "color": {
-          "field": "happiness_ranking",
+          "field": "welfare_rate",
           "type": "quantitative",
-          "scale": {"type": "linear", "domain": [47, 1], "range": ["#FFEBEE", "#B71C1C"]},
-
-          "title": "Happiness Ranking"
+          "scale": {"type": "linear", "domain": [0.5, 3.1], "range": ["#d9f7c1", "#0c421d"]},
+          "title": "welfare_rate %"
         },
     
         "tooltip": [
           {"field": "properties.name", "type": "nominal", "title": "Prefecture"},
-          {"field": "happiness_ranking", "type": "quantitative",  "title": "Happiness Ranking"}
+          {"field": "welfare_rate", "type": "quantitative",  "title": "Welfare Rate %"}
         ]
       }
     },
@@ -48,6 +48,5 @@
       },
       "mark": {"type": "geoshape", "fill": null, "stroke": "lightgray"}
     }
-  ],
-  "config": {}
+  ]
 }
